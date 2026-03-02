@@ -1,10 +1,25 @@
-// API Reference: https://www.wix.com/velo/reference/api-overview/introduction
-// “Hello, World!” Example: https://learn-code.wix.com/en/article/hello-world
+// 4Simple Modern Design - Global Effects
+// Base Colors from Guide: #06B6D4 (Cyan), #8B5CF6 (Violet)
 
 $w.onReady(function () {
-    // Write your JavaScript here
+    // Navigation Scroll Effect
+    // Adjust selector if your header ID is different (e.g., #header1)
+    $w("#header1").onViewportLeave(() => {
+        $w("#header1").style.backgroundColor = "rgba(7,7,26,0.95)";
+    });
+    
+    $w("#header1").onViewportEnter(() => {
+        $w("#header1").style.backgroundColor = "transparent";
+    });
 
-    // To select an element by ID use: $w('#elementID')
-
-    // Click 'Preview' to run your code
+    // Primary Button Hover (Cyan Base)
+    const primaryBtns = ["#btnDemo", "#btnContact"];
+    primaryBtns.forEach(id => {
+        $w(id).onMouseIn(() => {
+            $w(id).style.backgroundColor = "#0891b2"; // Darker Cyan
+        });
+        $w(id).onMouseOut(() => {
+            $w(id).style.backgroundColor = "#06b6d4";
+        });
+    });
 });
