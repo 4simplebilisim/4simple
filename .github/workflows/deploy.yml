@@ -22,6 +22,6 @@ jobs:
         run: npm install -g @wix/cli
 
       - name: Wix Publish
-        run: echo "y" | wix publish --force
+        run: npx @wix/cli publish --force --json
         env:
           WIX_API_KEY: ${{ secrets.WIX_API_KEY }}
