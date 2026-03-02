@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>4Simple | Dijital Dönüşüm & Operasyon Çözümleri</title>
+<meta name="description" content="4Simple — Dijital dönüşüm, depo yönetimi, özel yazılım, iş zekası ve otomasyon çözümleri.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Inter+Tight:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cyan:#06b6d4;--cyan-light:#22d3ee;--cyan-dark:#0891b2;
+  --violet:#8b5cf6;--violet-light:#a78bfa;--violet-dark:#7c3aed;
+  --accent:#fbbf24;
+  --dark:#07071a;--dark-card:#0d0d22;--dark-card2:#111130;
+  --surface:#0a0a20;
+  --border:rgba(6,182,212,.08);--border-hover:rgba(6,182,212,.2);
+  --text:#d4e3f5;--text-muted:#8a9cc0;--text-dim:#5a6d94;
+  --white:#fff;
+  --grad:linear-gradient(135deg,#06b6d4,#8b5cf6);
+  --grad-light:linear-gradient(135deg,#22d3ee,#a78bfa);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--dark);color:var(--text);line-height:1.7;overflow-x:hidden;}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(24px) saturate(1.3);background:rgba(7,7,26,.8);border-bottom:1px solid var(--border);transition:.3s;}
+.nav-inner{max-width:1240px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:14px 32px;}
+.nav-logo{text-decoration:none;display:flex;align-items:center;}
+.nav-links{display:flex;gap:28px;align-items:center;}
+.nav-links a{color:var(--text-muted);text-decoration:none;font-size:.88rem;font-weight:500;transition:.2s;position:relative;}
+.nav-links a:hover{color:var(--white);}
+.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--grad);transition:.3s;}
+.nav-links a:hover::after{width:100%;}
+.nav-cta{background:var(--grad)!important;color:var(--white)!important;padding:10px 24px;border-radius:10px;font-weight:600;font-size:.86rem;border:none;transition:.3s;}
+.nav-cta:hover{transform:translateY(-1px);box-shadow:0 6px 24px rgba(6,182,212,.3);}
+.nav-cta::after{display:none!important;}
+.mob-toggle{display:none;background:none;border:none;color:var(--text);cursor:pointer;}
+@media(max-width:960px){.nav-links{display:none;}.mob-toggle{display:block;}}
+
+/* ── HERO ── */
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;padding:120px 32px 80px;overflow:hidden;}
+.orb{position:absolute;border-radius:50%;filter:blur(100px);pointer-events:none;animation:orbF 14s ease-in-out infinite alternate;}
+.orb1{width:550px;height:550px;background:rgba(6,182,212,.1);top:-12%;left:-8%;}
+.orb2{width:400px;height:400px;background:rgba(139,92,246,.08);bottom:-10%;right:-6%;animation-delay:-5s;}
+.orb3{width:200px;height:200px;background:rgba(251,191,36,.04);top:50%;right:20%;animation-delay:-9s;}
+@keyframes orbF{0%{transform:translate(0,0) scale(1);}50%{transform:translate(30px,-25px) scale(1.06);}100%{transform:translate(-15px,10px) scale(.97);}}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(6,182,212,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(6,182,212,.025) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(ellipse 70% 60% at center,black 20%,transparent 70%);pointer-events:none;}
+.hero-content{position:relative;z-index:2;max-width:820px;}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(6,182,212,.08);border:1px solid rgba(6,182,212,.15);border-radius:50px;padding:8px 22px;font-size:.82rem;font-weight:500;color:var(--cyan-light);margin-bottom:28px;animation:fadeUp .8s ease-out;}
+.badge-dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px rgba(251,191,36,.5);animation:pulse 2s ease-in-out infinite;}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.5;transform:scale(1.5);}}
+.hero h1{font-family:'Inter Tight',sans-serif;font-weight:700;font-size:clamp(2.2rem,5vw,3.6rem);line-height:1.12;letter-spacing:-.03em;color:var(--white);margin-bottom:24px;animation:fadeUp .8s ease-out .15s both;}
+.gradient-text{background:var(--grad-light);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.hero-desc{font-size:1.1rem;color:var(--text-muted);max-width:580px;margin:0 auto 40px;animation:fadeUp .8s ease-out .3s both;}
+.hero-buttons{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;animation:fadeUp .8s ease-out .45s both;}
+.btn-primary{background:var(--grad);color:var(--white);padding:14px 32px;border-radius:12px;font-weight:600;font-size:1rem;text-decoration:none;border:none;cursor:pointer;transition:.3s;display:inline-flex;align-items:center;gap:8px;}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(6,182,212,.35);}
+.btn-secondary{background:transparent;color:var(--text);padding:14px 32px;border-radius:12px;font-weight:500;font-size:1rem;text-decoration:none;border:1px solid rgba(6,182,212,.15);transition:.3s;}
+.btn-secondary:hover{border-color:rgba(6,182,212,.35);background:rgba(6,182,212,.04);}
+.hero-stats{display:flex;gap:0;justify-content:center;margin-top:64px;animation:fadeUp .8s ease-out .6s both;}
+.hero-stat{text-align:center;padding:0 36px;}
+.hero-stat:not(:last-child){border-right:1px solid rgba(6,182,212,.1);}
+.hero-stat .number{font-family:'Inter Tight',sans-serif;font-weight:700;font-size:2.1rem;background:var(--grad-light);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.hero-stat .label{font-size:.8rem;color:var(--text-dim);margin-top:4px;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px);}to{opacity:1;transform:translateY(0);}}
+
+/* ── SECTIONS ── */
+section{padding:100px 32px;position:relative;z-index:1;}
+.section-inner{max-width:1240px;margin:auto;}
+.section-header{text-align:center;margin-bottom:64px;}
+.section-tag{font-family:'Inter Tight',sans-serif;font-weight:700;font-size:.76rem;letter-spacing:.15em;text-transform:uppercase;background:var(--grad-light);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:14px;}
+.section-header h2{font-family:'Inter Tight',sans-serif;font-weight:700;font-size:clamp(1.8rem,3.5vw,2.5rem);letter-spacing:-.02em;color:var(--white);margin-bottom:14px;}
+.section-header p{color:var(--text-muted);max-width:580px;margin:0 auto;font-size:1rem;}
+
+/* ── PRODUCTS ── */
+.products-section{background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+.products-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}
+.p-card{background:var(--dark-card);border:1px solid var(--border);border-radius:20px;padding:38px 34px;transition:.4s;position:relative;overflow:hidden;}
+.p-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad);opacity:0;transition:.4s;}
+.p-card:hover{border-color:var(--border-hover);transform:translateY(-5px);box-shadow:0 20px 56px rgba(0,0,0,.4);background:var(--dark-card2);}
+.p-card:hover::before{opacity:1;}
+.p-icon{width:52px;height:52px;border-radius:13px;display:flex;align-items:center;justify-content:center;margin-bottom:22px;}
+.p-card:nth-child(1) .p-icon{background:rgba(6,182,212,.1);color:var(--cyan-light);}
+.p-card:nth-child(2) .p-icon{background:rgba(139,92,246,.1);color:var(--violet-light);}
+.p-card:nth-child(3) .p-icon{background:rgba(251,191,36,.08);color:var(--accent);}
+.p-card:nth-child(4) .p-icon{background:rgba(34,211,238,.1);color:var(--cyan-light);}
+.p-card h3{font-family:'Inter Tight',sans-serif;font-weight:600;font-size:1.2rem;color:var(--white);margin-bottom:10px;}
+.p-card .desc{color:var(--text-muted);font-size:.92rem;line-height:1.7;margin-bottom:18px;}
+.tags-row{display:flex;flex-wrap:wrap;gap:7px;}
+.ftag{background:rgba(6,182,212,.05);border:1px solid rgba(6,182,212,.1);border-radius:7px;padding:5px 12px;font-size:.74rem;color:var(--text-muted);transition:.3s;}
+.p-card:hover .ftag{border-color:rgba(6,182,212,.18);}
+.p-link{display:inline-flex;align-items:center;gap:6px;margin-top:18px;background:var(--grad-light);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-weight:600;font-size:.86rem;text-decoration:none;transition:gap .3s;}
+.p-link:hover{gap:10px;}
+
+/* ── SERVICES ── */
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.s-card{background:var(--dark-card);border:1px solid var(--border);border-radius:18px;padding:34px 28px;transition:.4s;position:relative;overflow:hidden;}
+.s-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--grad);opacity:0;transition:.4s;}
+.s-card:hover{border-color:var(--border-hover);transform:translateY(-4px);box-shadow:0 16px 48px rgba(0,0,0,.35);}
+.s-card:hover::after{opacity:1;}
+.s-icon{width:50px;height:50px;border-radius:13px;display:flex;align-items:center;justify-content:center;margin-bottom:18px;}
+.s-card:nth-child(1) .s-icon{background:rgba(6,182,212,.1);color:#22d3ee;}
+.s-card:nth-child(2) .s-icon{background:rgba(139,92,246,.1);color:#a78bfa;}
+.s-card:nth-child(3) .s-icon{background:rgba(251,191,36,.08);color:#fbbf24;}
+.s-card:nth-child(4) .s-icon{background:rgba(16,185,129,.1);color:#34d399;}
+.s-card:nth-child(5) .s-icon{background:rgba(236,72,153,.08);color:#f472b6;}
+.s-card:nth-child(6) .s-icon{background:rgba(96,165,250,.1);color:#93c5fd;}
+.s-card h4{font-family:'Inter Tight',sans-serif;font-weight:600;font-size:1.05rem;color:var(--white);margin-bottom:8px;}
+.s-card p{color:var(--text-muted);font-size:.86rem;line-height:1.6;}
+.s-tag{display:inline-block;margin-top:14px;font-size:.7rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:4px 11px;border-radius:6px;background:rgba(6,182,212,.06);border:1px solid rgba(6,182,212,.12);color:var(--cyan-light);}
+
+/* ── WHY ── */
+.why-section{background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+.w-card{background:var(--dark-card);border:1px solid var(--border);border-radius:16px;padding:30px 22px;text-align:center;transition:.4s;}
+.w-card:hover{border-color:var(--border-hover);transform:translateY(-3px);}
+.w-icon{width:50px;height:50px;border-radius:13px;background:rgba(6,182,212,.08);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;}
+.w-card h4{font-family:'Inter Tight',sans-serif;font-weight:600;font-size:.98rem;color:var(--white);margin-bottom:7px;}
+.w-card p{color:var(--text-muted);font-size:.82rem;line-height:1.6;}
+
+/* ── PROCESS ── */
+.process-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;position:relative;}
+.process-steps::before{content:'';position:absolute;top:40px;left:14%;right:14%;height:2px;background:var(--grad);opacity:.12;}
+.step{text-align:center;position:relative;}
+.step-n{width:80px;height:80px;border-radius:50%;background:var(--dark-card);border:2px solid rgba(6,182,212,.2);display:flex;align-items:center;justify-content:center;margin:0 auto 18px;font-family:'Inter Tight',sans-serif;font-weight:800;font-size:1.5rem;background:var(--grad-light);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;position:relative;z-index:2;transition:.3s;}
+.step:hover .step-n{border-color:rgba(6,182,212,.4);box-shadow:0 0 24px rgba(6,182,212,.12);}
+.step h4{font-family:'Inter Tight',sans-serif;font-weight:600;font-size:1rem;color:var(--white);margin-bottom:6px;}
+.step p{color:var(--text-muted);font-size:.82rem;line-height:1.6;max-width:200px;margin:auto;}
+
+/* ── CTA ── */
+.cta-section{text-align:center;padding:120px 32px;position:relative;overflow:hidden;}
+.cta-glow{position:absolute;width:500px;height:500px;border-radius:50%;filter:blur(120px);pointer-events:none;}
+.cta-g1{background:rgba(6,182,212,.08);top:-20%;left:30%;}
+.cta-g2{background:rgba(139,92,246,.06);bottom:-30%;right:20%;}
+.cta-box{position:relative;z-index:2;max-width:660px;margin:auto;}
+.cta-box h2{font-family:'Inter Tight',sans-serif;font-weight:700;font-size:clamp(1.8rem,3.5vw,2.5rem);color:var(--white);margin-bottom:16px;}
+.cta-box p{color:var(--text-muted);font-size:1.02rem;margin-bottom:36px;}
+
+/* ── FOOTER ── */
+footer{background:var(--surface);border-top:1px solid var(--border);padding:48px 32px;}
+.footer-inner{max-width:1240px;margin:auto;display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px;align-items:start;}
+.footer-brand p{color:var(--text-dim);font-size:.84rem;margin-top:12px;max-width:280px;line-height:1.6;}
+.footer-col h5{font-family:'Inter Tight',sans-serif;font-weight:600;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);margin-bottom:14px;}
+.footer-col a{display:block;color:var(--text-dim);text-decoration:none;font-size:.86rem;padding:3px 0;transition:.2s;}
+.footer-col a:hover{color:var(--white);}
+.footer-bottom{max-width:1240px;margin:24px auto 0;padding-top:24px;border-top:1px solid var(--border);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+.footer-bottom span,.footer-bottom a{color:var(--text-dim);font-size:.8rem;text-decoration:none;}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1024px){.products-grid,.footer-inner{grid-template-columns:1fr;}.services-grid{grid-template-columns:repeat(2,1fr);}.why-grid{grid-template-columns:repeat(2,1fr);}.process-steps{grid-template-columns:repeat(2,1fr);}.process-steps::before{display:none;}}
+@media(max-width:640px){.services-grid,.why-grid,.process-steps{grid-template-columns:1fr;}.hero-stats{flex-direction:column;gap:20px;}.hero-stat{border-right:none!important;border-bottom:1px solid rgba(6,182,212,.1);padding:0 0 16px;}.hero-stat:last-child{border:none;}}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <svg viewBox="0 0 240 44" width="185" xmlns="http://www.w3.org/2000/svg">
+        <defs><linearGradient id="nlg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#06b6d4"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs>
+        <rect x="2" y="4" width="36" height="36" rx="9" fill="none" stroke="url(#nlg)" stroke-width="2"/>
+        <text x="20" y="29" text-anchor="middle" font-family="'Inter Tight',sans-serif" font-weight="800" font-size="21" fill="#22d3ee">4</text>
+        <text x="48" y="29" font-family="'Inter Tight',sans-serif" font-weight="700" font-size="24" fill="#fff" letter-spacing="-0.5">Simple</text>
+      </svg>
+    </a>
+    <div class="nav-links">
+      <a href="#hizmetler">Hizmetler</a>
+      <a href="#urunler">Ürünler</a>
+      <a href="#neden">Neden Biz</a>
+      <a href="#surec">Süreç</a>
+      <a href="#iletisim" class="nav-cta">Bize Ulaşın</a>
+    </div>
+    <button class="mob-toggle" aria-label="Menü"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="orb orb1"></div><div class="orb orb2"></div><div class="orb orb3"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-badge"><span class="badge-dot"></span>Dijital Dönüşüm & Operasyon Çözümleri</div>
+    <h1>İş Süreçlerinizi<br><span class="gradient-text">Basitleştiriyoruz</span></h1>
+    <p class="hero-desc">Depo yönetiminden özel yazılıma, iş zekasından saha operasyonlarına — tüm dijital ihtiyaçlarınız için uçtan uca çözüm ortağınız.</p>
+    <div class="hero-buttons">
+      <a href="#iletisim" class="btn-primary">Ücretsiz Demo Talep Edin <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a href="#hizmetler" class="btn-secondary">Çözümleri Keşfedin</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="number">%40</div><div class="label">Hata Azaltma</div></div>
+      <div class="hero-stat"><div class="number">%25</div><div class="label">Maliyet Tasarrufu</div></div>
+      <div class="hero-stat"><div class="number">50+</div><div class="label">Başarılı Proje</div></div>
+      <div class="hero-stat"><div class="number">7/24</div><div class="label">Destek</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES (Danışmanlık & Hizmetler) -->
+<section class="products-section" id="hizmetler">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-tag">Danışmanlık & Hizmetler</div>
+      <h2>İşletmenize Özel Dijital Çözümler</h2>
+      <p>Tam ihtiyacınıza göre tasarlanmış yazılım, otomasyon ve danışmanlık hizmetleri.</p>
+    </div>
+    <div class="services-grid">
+      <div class="s-card"><div class="s-icon"><svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg></div><h4>Tailor-Made Yazılım</h4><p>İş süreçlerinize birebir uygun, sıfırdan tasarlanan özel yazılım çözümleri. Ölçeklenebilir mimari, modern teknoloji yığını ve tam entegrasyon desteği.</p><span class="s-tag">Özel Geliştirme</span></div>
+      <div class="s-card"><div class="s-icon"><svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/></svg></div><h4>İş Analizi & Danışmanlık</h4><p>Mevcut süreçlerinizi analiz ederek darboğazları tespit ediyor, optimizasyon yol haritanızı birlikte oluşturuyoruz. As-is / To-be analizleri.</p><span class="s-tag">İş Analistliği</span></div>
+      <div class="s-card"><div class="s-icon"><svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/><path d="M9 14l2 2 4-4"/></svg></div><h4>Task & Proje Yönetimi</h4><p>Ekiplerinizin görev takibi, sprint planlaması ve proje yönetimi süreçlerini yapılandırıyoruz. Araç kurulumu ve ekip eğitimi dahil.</p><span class="s-tag">Proje Yönetimi</span></div>
+      <div class="s-card"><div class="s-icon"><svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg></div><h4>Otomasyon Projeleri</h4><p>Tekrarlayan süreçleri otomatikleştirin, iş gücünüzü katma değerli işlere yönlendirin. RPA ve iş akışı otomasyonu.</p><span class="s-tag">Süreç Otomasyonu</span></div>
+      <div class="s-card"><div class="s-icon"><svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg></div><h4>Entegrasyon Hizmetleri</h4><p>ERP, CRM, e-ticaret ve üçüncü parti sistemlerinizi sorunsuz birbirine bağlayın. API geliştirme ve veri senkronizasyonu.</p><span class="s-tag">Sistem Entegrasyonu</span></div>
+      <div class="s-card"><div class="s-icon"><svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg></div><h4>İş Zekası (BI)</h4><p>Verilerinizi anlamlı içgörülere dönüştürün. Özel dashboard'lar, gerçek zamanlı raporlama ve tahminleme modelleri.</p><span class="s-tag">Veri & Analitik</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS (Ürünlerimiz) -->
+<section id="urunler">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-tag">Ürünlerimiz</div>
+      <h2>Operasyona Özel Dijital Araçlar</h2>
+      <p>Hazır ürün çözümlerimizle hızlı kurulum, anında verimlilik artışı.</p>
+    </div>
+    <div class="products-grid">
+      <div class="p-card">
+        <div class="p-icon"><svg width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg></div>
+        <h3>StockMate — Depo & Sevkiyat</h3>
+        <p class="desc">Depo tasarımından stok kontrolüne, sipariş hazırlığından sevkiyat takibine kadar tüm süreçlerinizi dijitalleştirin.</p>
+        <div class="tags-row"><span class="ftag">Barkod / RF-ID</span><span class="ftag">Lokasyon İzleme</span><span class="ftag">Yükleme Optimizasyonu</span><span class="ftag">FIFO / LIFO</span></div>
+        <a href="#" class="p-link">Detaylı bilgi →</a>
+      </div>
+      <div class="p-card">
+        <div class="p-icon"><svg width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg></div>
+        <h3>WebPlus — Çoklu Kanal Satış</h3>
+        <p class="desc">Tüm satış kanallarınızı ve iş ortaklarınızı tek platformdan yönetin. Sipariş akışını otomatikleştirin.</p>
+        <div class="tags-row"><span class="ftag">Çoklu Kanal</span><span class="ftag">Sipariş Otomasyonu</span><span class="ftag">Anlık Raporlama</span><span class="ftag">İş Ortağı Yönetimi</span></div>
+        <a href="#" class="p-link">Detaylı bilgi →</a>
+      </div>
+      <div class="p-card">
+        <div class="p-icon"><svg width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.447 2.724A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg></div>
+        <h3>QuestMate — Saha & Mobil Ekip</h3>
+        <p class="desc">Saha verilerinizi, ekiplerinizi ve operasyonlarınızı mobil cihazlar üzerinden yönetin.</p>
+        <div class="tags-row"><span class="ftag">Mobil Veri Toplama</span><span class="ftag">GPS Takip</span><span class="ftag">Görev Yönetimi</span><span class="ftag">Dijital Formlar</span></div>
+        <a href="#" class="p-link">Detaylı bilgi →</a>
+      </div>
+      <div class="p-card">
+        <div class="p-icon"><svg width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg></div>
+        <h3>Trassir — AI Video Analiz</h3>
+        <p class="desc">Yapay zeka destekli video analiz ile güvenlik, sayım ve operasyonel takip süreçlerinizi otomatikleştirin.</p>
+        <div class="tags-row"><span class="ftag">Yapay Zeka</span><span class="ftag">Anlık Bildirim</span><span class="ftag">Nesne Tanıma</span><span class="ftag">Davranış Analizi</span></div>
+        <a href="#" class="p-link">Detaylı bilgi →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why-section" id="neden">
+  <div class="section-inner">
+    <div class="section-header"><div class="section-tag">Neden 4Simple?</div><h2>Fark Yaratan Yaklaşım</h2><p>Operasyonel verimliliğinizi dönüştüren çözüm ortağınız.</p></div>
+    <div class="why-grid">
+      <div class="w-card"><div class="w-icon"><svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="#22d3ee" stroke-width="1.5"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div><h4>Hızlı Entegrasyon</h4><p>Mevcut sistemlere sorunsuz entegre. Ortalama 4 haftada canlıya geçiş.</p></div>
+      <div class="w-card"><div class="w-icon"><svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="#22d3ee" stroke-width="1.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div><h4>%99.9 Uptime</h4><p>Bulut altyapı ile kesintisiz hizmet ve veri güvenliği.</p></div>
+      <div class="w-card"><div class="w-icon"><svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="#22d3ee" stroke-width="1.5"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div><h4>Uzman Ekip</h4><p>Sektör deneyimli danışman ve geliştiricilerle kişisel destek.</p></div>
+      <div class="w-card"><div class="w-icon"><svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="#22d3ee" stroke-width="1.5"><path d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"/></svg></div><h4>Esnek & Ölçeklenebilir</h4><p>İşletmenizle birlikte büyüyen modüler mimari.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="surec">
+  <div class="section-inner">
+    <div class="section-header"><div class="section-tag">Nasıl Çalışırız</div><h2>Başarıya 4 Adımda Ulaşın</h2></div>
+    <div class="process-steps">
+      <div class="step"><div class="step-n">1</div><h4>Keşif & Analiz</h4><p>Süreçlerinizi analiz eder, ihtiyaçlarınızı haritalandırırız.</p></div>
+      <div class="step"><div class="step-n">2</div><h4>Çözüm Tasarımı</h4><p>İşletmenize özel çözüm mimarisini birlikte tasarlarız.</p></div>
+      <div class="step"><div class="step-n">3</div><h4>Uygulama & Eğitim</h4><p>Sistemi kurar, ekibinizi eğitir, canlıya geçiş yaparız.</p></div>
+      <div class="step"><div class="step-n">4</div><h4>Sürekli İyileştirme</h4><p>Canlı sonrası destekle sürekli optimize ederiz.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="iletisim">
+  <div class="cta-glow cta-g1"></div><div class="cta-glow cta-g2"></div>
+  <div class="cta-box">
+    <div class="section-tag">Hemen Başlayın</div>
+    <h2>Dijital Dönüşüm Yolculuğunuza<br>Hazır mısınız?</h2>
+    <p>Ücretsiz keşif görüşmesi ile ihtiyaçlarınızı birlikte haritalandıralım.</p>
+    <div class="hero-buttons" style="animation:none;">
+      <a href="mailto:info@4simple.com.tr" class="btn-primary">Ücretsiz Keşif Görüşmesi <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a href="mailto:info@4simple.com.tr" class="btn-secondary">info@4simple.com.tr</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <svg viewBox="0 0 240 44" width="155" xmlns="http://www.w3.org/2000/svg">
+        <defs><linearGradient id="flg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#06b6d4"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs>
+        <rect x="2" y="4" width="36" height="36" rx="9" fill="none" stroke="url(#flg)" stroke-width="2"/>
+        <text x="20" y="29" text-anchor="middle" font-family="'Inter Tight',sans-serif" font-weight="800" font-size="21" fill="#22d3ee">4</text>
+        <text x="48" y="29" font-family="'Inter Tight',sans-serif" font-weight="700" font-size="24" fill="#5a6d94" letter-spacing="-0.5">Simple</text>
+      </svg>
+      <p>Dijital dönüşüm çözümleri ile işletmenizin operasyonel verimliliğini artırıyoruz.</p>
+    </div>
+    <div class="footer-col"><h5>Hizmetler</h5><a href="#">Özel Yazılım</a><a href="#">İş Analizi</a><a href="#">Proje Yönetimi</a><a href="#">Otomasyon</a><a href="#">Entegrasyon</a><a href="#">İş Zekası</a></div>
+    <div class="footer-col"><h5>Ürünler</h5><a href="#">StockMate</a><a href="#">WebPlus</a><a href="#">QuestMate</a><a href="#">Trassir</a></div>
+  </div>
+  <div class="footer-bottom"><span>© 2025 4Simple. Tüm hakları saklıdır.</span><a href="mailto:info@4simple.com.tr">info@4simple.com.tr</a></div>
+</footer>
+
+</body>
+</html>
