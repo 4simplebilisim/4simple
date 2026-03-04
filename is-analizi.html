@@ -132,7 +132,7 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:48px
     <h1>Veriye Dayalı Kararlar<br><span class="gradient-text">İş Analizi Çözümleri</span></h1>
     <p class="hero-desc">İş süreçlerinizi derinlemesine analiz ediyor, veri odaklı stratejilerle operasyonel verimliliğinizi artırıyoruz.</p>
     <div class="hero-buttons">
-      <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6c05020a032c581f05011c0009420f030142181e">[email&#160;protected]</a>
+      info@4simple.com.tr
       <a href="index.html" class="magic-btn magic-btn-secondary"><span>Tüm Çözümler</span></a>
     </div>
   </div>
@@ -164,7 +164,7 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:48px
     <h2>İş Süreçlerinizi<br>Optimize Edelim</h2>
     <p>Ücretsiz keşif görüşmesi ile iyileştirme fırsatlarınızı birlikte belirleyelim.</p>
     <div class="hero-buttons" style="animation:none">
-      <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2f464149406f1b5c46425f434a014c4042015b5d">[email&#160;protected]</a>
+      info@4simple.com.tr
       <a href="index.html" class="magic-btn magic-btn-secondary"><span>Ana Sayfaya Dön</span></a>
     </div>
   </div>
@@ -176,11 +176,11 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:48px
     <div class="footer-col"><h5>Hizmetler</h5><a href="ozel-yazilim.html">Özel Yazılım</a><a href="is-analizi.html">İş Analizi</a><a href="proje-yonetimi.html">Proje Yönetimi</a><a href="otomasyon.html">Otomasyon</a><a href="entegrasyon.html">Entegrasyon</a><a href="is-zekasi.html">İş Zekası</a></div>
     <div class="footer-col"><h5>Ürünler</h5><a href="stockmate.html">StockMate</a><a href="webplus.html">WebPlus</a><a href="questmate.html">QuestMate</a><a href="trassir.html">Trassir</a></div>
   </div>
-  <div class="footer-bottom"><span>&copy; 2022 4Simple Bilişim. Tüm hakları saklıdır.</span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="761f1810193642051f1b061a135815191b580204">[email&#160;protected]</a></div>
+  <div class="footer-bottom"><span>&copy; 2022 4Simple Bilişim. Tüm hakları saklıdır.</span>info@4simple.com.tr</div>
 </footer>
 
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 // ═══ DOT GRID ═══
 (()=>{
   const canvas=document.getElementById('dotGrid');
@@ -196,4 +196,11 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:48px
   canvas.addEventListener('mouseleave',()=>{mouse.x=-9999;mouse.y=-9999});
   canvas.addEventListener('click',e=>{const r=canvas.getBoundingClientRect();shocks.push({x:e.clientX-r.left,y:e.clientY-r.top,t:0,mx:15})});
 canvas.addEventListener('touchstart',e=>{const r=canvas.getBoundingClientRect(),t=e.touches[0];shocks.push({x:t.clientX-r.left,y:t.clientY-r.top,t:0,mx:15})},{passive:true});
-canvas.addEventListener('touchmove',e=>{e.preventDefault();
+canvas.addEventListener('touchmove',e=>{e.preventDefault();const r=canvas.getBoundingClientRect(),t=e.touches[0];mouse.x=t.clientX-r.left;mouse.y=t.clientY-r.top},{passive:false});
+window.addEventListener('resize',()=>{W=canvas.width=canvas.offsetWidth;H=canvas.height=canvas.offsetHeight;buildGrid()});
+buildGrid();draw()})();
+
+document.addEventListener('click',function(e){var ls=document.getElementById('langSwitch');if(ls&&!ls.contains(e.target))ls.classList.remove('open')});
+</script>
+</body>
+</html>

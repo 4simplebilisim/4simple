@@ -305,8 +305,8 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:48px
     <h2>Dijital Dönüşüm Yolculuğunuza<br>Hazır mısınız?</h2>
     <p>Ücretsiz keşif görüşmesi ile ihtiyaçlarınızı birlikte haritalandıralım.</p>
     <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
-      <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="274e4941486713544e4a574b420944484a095355">[email&#160;protected]</a>
-      <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="96fff8f0f9d6a2e5fffbe6faf3b8f5f9fbb8e2e4">[email&#160;protected]</a>
+      info@4simple.com.tr
+      info@4simple.com.tr
     </div>
   </div>
 </section>
@@ -337,11 +337,11 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:48px
   </div>
   <div class="footer-bottom">
     <span>&copy; 2022 4Simple Bilişim. Tüm hakları saklıdır.</span>
-    <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3d54535b527d094e54504d5158135e525013494f">[email&#160;protected]</a>
+    info@4simple.com.tr
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 // ═══ DOT GRID ═══
 (() => {
   const canvas = document.getElementById('dotGrid');
@@ -391,4 +391,11 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:48px
   canvas.addEventListener('mouseleave',()=>{mouse.x=-9999;mouse.y=-9999});
   canvas.addEventListener('click',e=>{const r=canvas.getBoundingClientRect();shocks.push({x:e.clientX-r.left,y:e.clientY-r.top,t:0,mx:15})});
 canvas.addEventListener('touchstart',e=>{const r=canvas.getBoundingClientRect(),t=e.touches[0];shocks.push({x:t.clientX-r.left,y:t.clientY-r.top,t:0,mx:15})},{passive:true});
-canvas.addEventListener('touchmove',e=>{e.preventDefault();
+canvas.addEventListener('touchmove',e=>{e.preventDefault();const r=canvas.getBoundingClientRect(),t=e.touches[0];mouse.x=t.clientX-r.left;mouse.y=t.clientY-r.top},{passive:false});
+window.addEventListener('resize',()=>{W=canvas.width=canvas.offsetWidth;H=canvas.height=canvas.offsetHeight;buildGrid()});
+buildGrid();draw()})();
+
+document.addEventListener('click',function(e){var ls=document.getElementById('langSwitch');if(ls&&!ls.contains(e.target))ls.classList.remove('open')});
+</script>
+</body>
+</html>
