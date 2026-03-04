@@ -305,8 +305,8 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:48px
     <h2>Ready for Your Digital<br>Transformation Journey?</h2>
     <p>Let us map your needs together with a free discovery session.</p>
     <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
-      <a href="/cdn-cgi/l/email-protection#e1888f878ea1d592888c918d84cf828e8ccf9593" class="magic-btn magic-btn-primary"><span>Free Discovery Session</span> <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-      <a href="/cdn-cgi/l/email-protection#6900070f06295d1a000419050c470a0604471d1b" class="magic-btn magic-btn-secondary"><span><span class="__cf_email__" data-cfemail="5831363e37186c2b313528343d763b3735762c2a">[email&#160;protected]</span></span></a>
+      info@4simple.com.tr
+      info@4simple.com.tr
     </div>
   </div>
 </section>
@@ -337,11 +337,11 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:48px
   </div>
   <div class="footer-bottom">
     <span>&copy; 2022 4Simple IT. All rights reserved.</span>
-    <a href="/cdn-cgi/l/email-protection#71181f171e314502181c011d145f121e1c5f0503"><span class="__cf_email__" data-cfemail="5d34333b321d692e34302d3138733e323073292f">[email&#160;protected]</span></a>
+    info@4simple.com.tr
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 // ═══ DOT GRID ═══
 (() => {
   const canvas = document.getElementById('dotGrid');
@@ -389,13 +389,14 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:48px
   }
   canvas.addEventListener('mousemove',e=>{const r=canvas.getBoundingClientRect();mouse.x=e.clientX-r.left;mouse.y=e.clientY-r.top});
   canvas.addEventListener('mouseleave',()=>{mouse.x=-9999;mouse.y=-9999});
-  canvas.addEventListener('click',e=>{const r=canvas.getBoundingClientRect();shocks.push({x:e.clientX-r.left,y:e.clientY-r.top,r:0,s:1})});
-  canvas.addEventListener('touchmove',e=>{e.preventDefault();const r=canvas.getBoundingClientRect(),t=e.touches[0];mouse.x=t.clientX-r.left;mouse.y=t.clientY-r.top},{passive:false});
-  canvas.addEventListener('touchend',()=>{mouse.x=-9999;mouse.y=-9999});
-  window.addEventListener('resize',()=>{cancelAnimationFrame(animId);resize();draw()});
-  resize(); draw();
-})();
+  canvas.addEventListener('click',e=>{const r=canvas.getBoundingClientRect();shocks.push({x:e.clientX-r.left,y:e.clientY-r.top,t:0,mx:15})});
+canvas.addEventListener('touchstart',e=>{const r=canvas.getBoundingClientRect(),t=e.touches[0];shocks.push({x:t.clientX-r.left,y:t.clientY-r.top,t:0,mx:15})},{passive:true});
+canvas.addEventListener('touchmove',e=>{e.preventDefault();const r=canvas.getBoundingClientRect(),t=e.touches[0];mouse.x=t.clientX-r.left;mouse.y=t.clientY-r.top},{passive:false});
+window.addEventListener('resize',()=>{W=canvas.width=canvas.offsetWidth;H=canvas.height=canvas.offsetHeight;buildGrid()});
+buildGrid();draw()})();
 
-// ═══ MAGIC BENTO - Mouse tracking ═══
-(() => {
-  document.querySelectorAll('.magic-btn, .bento-card, .product-card, .nav-links a')
+// Language switcher close
+document.addEventListener('click',function(e){var ls=document.getElementById('langSwitch');if(ls&&!ls.contains(e.target))ls.classList.remove('open')});
+</script>
+</body>
+</html>
