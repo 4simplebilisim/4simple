@@ -132,7 +132,7 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:48px
     <h1>Sistemlerinizi<br><span class="gradient-text">Birbirine Bağlayın</span></h1>
     <p class="hero-desc">Farklı yazılım ve platformlarınızı sorunsuz entegre ediyor, veri akışını otomatize ediyoruz.</p>
     <div class="hero-buttons">
-      <a href="/cdn-cgi/l/email-protection#3d54535b527d094e54504d5158135e525013494f" class="magic-btn magic-btn-primary"><span>Ücretsiz Demo Talep Edin</span> <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      info@4simple.com.tr
       <a href="index.html" class="magic-btn magic-btn-secondary"><span>Tüm Çözümler</span></a>
     </div>
   </div>
@@ -164,7 +164,7 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:48px
     <h2>Sistemlerinizi<br>Entegre Edelim</h2>
     <p>Mevcut altyapınızı analiz edip en uygun entegrasyon stratejisini birlikte belirleyelim.</p>
     <div class="hero-buttons" style="animation:none">
-      <a href="/cdn-cgi/l/email-protection#224b4c444d6216514b4f524e470c414d4f0c5650" class="magic-btn magic-btn-primary"><span>Ücretsiz Keşif Görüşmesi</span> <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      info@4simple.com.tr
       <a href="index.html" class="magic-btn magic-btn-secondary"><span>Ana Sayfaya Dön</span></a>
     </div>
   </div>
@@ -176,11 +176,11 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:48px
     <div class="footer-col"><h5>Hizmetler</h5><a href="ozel-yazilim.html">Özel Yazılım</a><a href="is-analizi.html">İş Analizi</a><a href="proje-yonetimi.html">Proje Yönetimi</a><a href="otomasyon.html">Otomasyon</a><a href="entegrasyon.html">Entegrasyon</a><a href="is-zekasi.html">İş Zekası</a></div>
     <div class="footer-col"><h5>Ürünler</h5><a href="stockmate.html">StockMate</a><a href="webplus.html">WebPlus</a><a href="questmate.html">QuestMate</a><a href="trassir.html">Trassir</a></div>
   </div>
-  <div class="footer-bottom"><span>&copy; 2022 4Simple Bilişim. Tüm hakları saklıdır.</span><a href="/cdn-cgi/l/email-protection#fa93949c95bace8993978a969fd4999597d48e88"><span class="__cf_email__" data-cfemail="e0898e868fa0d493898d908c85ce838f8dce9492">[email&#160;protected]</span></a></div>
+  <div class="footer-bottom"><span>&copy; 2022 4Simple Bilişim. Tüm hakları saklıdır.</span>info@4simple.com.tr</div>
 </footer>
 
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 // ═══ DOT GRID ═══
 (()=>{
   const canvas=document.getElementById('dotGrid');
@@ -194,7 +194,14 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:48px
   function draw(){ctx.clearRect(0,0,W,H);for(let i=shocks.length-1;i>=0;i--){shocks[i].r+=4;shocks[i].s*=.97;if(shocks[i].s<.01)shocks.splice(i,1)}for(let i=0;i<dots.length;i++){const d=dots[i],dx=mouse.x-d.bx,dy=mouse.y-d.by,dist=Math.sqrt(dx*dx+dy*dy);let tgt=dist<cfg.proximity?1-dist/cfg.proximity:0;d.act+=(tgt-d.act)*.12;let sx=0,sy=0;for(let s=0;s<shocks.length;s++){const sh=shocks[s],sdx=d.bx-sh.x,sdy=d.by-sh.y,sd=Math.sqrt(sdx*sdx+sdy*sdy),ring=Math.abs(sd-sh.r);if(ring<40){const pw=sh.s*(1-ring/40),a=Math.atan2(sdy,sdx);sx+=Math.cos(a)*pw*cfg.shockStrength;sy+=Math.sin(a)*pw*cfg.shockStrength}}d.vx+=(d.bx+sx-d.x)*cfg.returnSpeed;d.vy+=(d.by+sy-d.y)*cfg.returnSpeed;d.vx*=.85;d.vy*=.85;d.x+=d.vx;d.y+=d.vy;const t=d.act,sc=1+t*1.5,col=t>.5?lerp(cfg.activeColor,cfg.accentColor,(t-.5)*2):lerp(cfg.baseColor,cfg.activeColor,t*2);const alpha=.2+t*.8,rad=cfg.dotSize*sc/2;ctx.beginPath();ctx.arc(d.x,d.y,rad,0,Math.PI*2);ctx.fillStyle=`rgba(${col.r|0},${col.g|0},${col.b|0},${alpha.toFixed(2)})`;ctx.fill();if(t>.3){ctx.beginPath();ctx.arc(d.x,d.y,rad+3*t,0,Math.PI*2);ctx.fillStyle=`rgba(34,211,238,${(t*.12).toFixed(2)})`;ctx.fill()}}animId=requestAnimationFrame(draw)}
   canvas.addEventListener('mousemove',e=>{const r=canvas.getBoundingClientRect();mouse.x=e.clientX-r.left;mouse.y=e.clientY-r.top});
   canvas.addEventListener('mouseleave',()=>{mouse.x=-9999;mouse.y=-9999});
-  canvas.addEventListener('click',e=>{const r=canvas.getBoundingClientRect();shocks.push({x:e.clientX-r.left,y:e.clientY-r.top,r:0,s:1})});
-  canvas.addEventListener('touchmove',e=>{e.preventDefault();const r=canvas.getBoundingClientRect(),t=e.touches[0];mouse.x=t.clientX-r.left;mouse.y=t.clientY-r.top},{passive:false});
-  canvas.addEventListener('touchend',()=>{mouse.x=-9999;mouse.y=-9999});
-  window.addEventListener('resize',()=>{cancelAni
+  canvas.addEventListener('click',e=>{const r=canvas.getBoundingClientRect();shocks.push({x:e.clientX-r.left,y:e.clientY-r.top,t:0,mx:15})});
+canvas.addEventListener('touchstart',e=>{const r=canvas.getBoundingClientRect(),t=e.touches[0];shocks.push({x:t.clientX-r.left,y:t.clientY-r.top,t:0,mx:15})},{passive:true});
+canvas.addEventListener('touchmove',e=>{e.preventDefault();const r=canvas.getBoundingClientRect(),t=e.touches[0];mouse.x=t.clientX-r.left;mouse.y=t.clientY-r.top},{passive:false});
+window.addEventListener('resize',()=>{W=canvas.width=canvas.offsetWidth;H=canvas.height=canvas.offsetHeight;buildGrid()});
+buildGrid();draw()})();
+
+// Language switcher close
+document.addEventListener('click',function(e){var ls=document.getElementById('langSwitch');if(ls&&!ls.contains(e.target))ls.classList.remove('open')});
+</script>
+</body>
+</html>
