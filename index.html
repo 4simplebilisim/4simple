@@ -66,16 +66,17 @@ header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdro
 .hero h1{font-size:56px;letter-spacing:-1.8px;text-wrap:pretty}
 .hero p{font-size:17px;color:var(--text);line-height:1.65;max-width:520px}
 .hero-btns{display:flex;gap:14px;padding-top:8px;flex-wrap:wrap}
-.stats{display:flex;gap:36px;flex-wrap:wrap;border-top:1px solid var(--border);padding-top:22px;margin-top:14px;width:100%}
-.stat-v{font-size:26px;font-weight:600;color:var(--navy);line-height:1.2}
-.stat-l{font-size:12.5px;color:var(--text-muted);letter-spacing:.4px}
 
 /* hub card */
 .hub{background:#fff;border:1px solid var(--border);border-radius:14px;padding:28px;box-shadow:0 1px 2px rgba(21,35,65,.04)}
 .hub-t{font-size:12px;font-weight:500;letter-spacing:2.4px;text-transform:uppercase;color:var(--text-muted);padding-bottom:20px}
 .hub-rows{display:flex;flex-direction:column;gap:10px}
 .hub-row{background:var(--bg-alt);border-radius:8px;padding:14px 16px;display:flex;align-items:center;gap:12px}
-.hub-k{font-size:11px;font-weight:600;color:var(--text-muted);width:52px;flex-shrink:0}
+.hub-k{font-size:11px;font-weight:600;color:var(--text-muted);flex-shrink:0}
+.hub-row .hub-v{font-size:14px;color:var(--ink);font-weight:500}
+a.hub-row{transition:background-color .15s ease-out}
+a.hub-row:hover{background:#EDF1F7}
+a.hub-row:hover .hub-k{color:var(--accent)}
 .hub-line{flex:1;height:1px;background:var(--border-strong)}
 .hub-v{font-size:13px;color:var(--ink)}
 .hub-core{background:var(--navy);border-radius:8px;padding:18px 16px;margin:4px 0;display:flex;align-items:center;justify-content:space-between;gap:12px}
@@ -142,8 +143,13 @@ footer{background:var(--ink);border-top:1px solid var(--navy-line)}
 .ft-name{font-size:16px;font-weight:500;color:#fff;letter-spacing:2.4px;line-height:1}
 .ft-tag{font-size:8.5px;color:var(--on-navy-4);letter-spacing:4px;margin-top:2px;line-height:1}
 .ft-brand p{font-size:14px;color:var(--on-navy-3);max-width:320px;margin-bottom:18px}
-.ft-badge{display:inline-block;border:1px solid var(--navy-badge);border-radius:6px;padding:10px 14px;font-size:12.5px;color:var(--on-navy-4);transition:border-color .15s ease-out,color .15s ease-out}
-.ft-badge:hover{border-color:var(--accent-pale);color:var(--on-navy-1)}
+.ft-badge{display:inline-flex;align-items:center;gap:13px;background:#fff;border:1px solid #fff;border-radius:8px;padding:11px 15px;transition:box-shadow .15s ease-out}
+.ft-badge:hover{box-shadow:0 0 0 3px rgba(91,141,239,.35)}
+.ft-badge img{height:26px;width:auto;display:block}
+.ft-badge-div{width:1px;height:26px;background:#D9E0EA;flex-shrink:0}
+.ft-badge-txt{display:flex;flex-direction:column;gap:2px;line-height:1}
+.ft-badge-k{font-size:8px;font-weight:600;letter-spacing:1.8px;color:#2563C9}
+.ft-badge-n{font-size:12.5px;font-weight:500;color:#1B2B4B}
 .ft-col h4{font-size:12px;font-weight:600;letter-spacing:2.4px;text-transform:uppercase;color:var(--on-navy-4);margin-bottom:18px}
 .ft-links{display:flex;flex-direction:column;gap:12px}
 .ft-links a{font-size:14px;color:var(--on-navy-1);transition:color .15s ease-out}
@@ -171,8 +177,7 @@ footer{background:var(--ink);border-top:1px solid var(--navy-line)}
   .prod-in,.why{padding:56px var(--pad)}
   .cta-in{padding:56px var(--pad)}
   .cta-l h2{font-size:28px}
-  .stats{gap:24px}
-  .hd .btn-p{display:none}
+    .hd .btn-p{display:none}
   .ft-top{grid-template-columns:1fr}
 }
 </style>
@@ -213,30 +218,26 @@ footer{background:var(--ink);border-top:1px solid var(--navy-line)}
 <section class="hero">
   <div class="hero-in">
     <div class="hero-l">
-      <span class="eyebrow">Sistem Entegrasyonu</span>
-      <h1>Sistemleriniz tek bir bütün gibi çalışsın</h1>
-      <p>ERP'niz, pazaryeri kanallarınız, e-fatura ve raporlama katmanınız arasında veriyi elle taşımayı bırakın. Kurduğumuz entegrasyon katmanı bunu sizin yerinize, izlenebilir şekilde yapar.</p>
+      <span class="eyebrow">Dijital Dönüşüm &amp; Operasyon Çözümleri</span>
+      <h1>İş süreçlerinizi sadeleştiriyoruz</h1>
+      <p>Depo yönetiminden özel yazılıma, iş zekâsından saha operasyonlarına — dijital ihtiyaçlarınız için uçtan uca çözüm ortağınız.</p>
       <div class="hero-btns">
         <a href="demo-talep.html" class="btn btn-p btn-lg">Ücretsiz Demo</a>
         <a href="#hizmetler" class="btn btn-s">Tüm Çözümler</a>
       </div>
-      <div class="stats">
-        <div><div class="stat-v">2022</div><div class="stat-l">Kuruluş</div></div>
-        <div><div class="stat-v">6</div><div class="stat-l">Hizmet alanı</div></div>
-        <div><div class="stat-v">4</div><div class="stat-l">Ürün ortaklığı</div></div>
-      </div>
     </div>
 
     <div class="hub">
-      <div class="hub-t">Hub &amp; Spoke Mimarisi</div>
+      <div class="hub-t">Çalışma Alanlarımız</div>
       <div class="hub-rows">
-        <div class="hub-row"><span class="hub-k">ERP</span><span class="hub-line"></span><span class="hub-v">SAP · Logo · Netsis</span></div>
-        <div class="hub-row"><span class="hub-k">PAZAR</span><span class="hub-line"></span><span class="hub-v">Trendyol · Hepsiburada</span></div>
-        <div class="hub-core"><span class="hub-core-l">Entegrasyon Katmanı</span><span class="hub-core-r">4 SIMPLE</span></div>
-        <div class="hub-row"><span class="hub-k">GİB</span><span class="hub-line"></span><span class="hub-v">e-Fatura · e-Arşiv</span></div>
-        <div class="hub-row"><span class="hub-k">BI</span><span class="hub-line"></span><span class="hub-v">Raporlama · Dashboard</span></div>
+        <a class="hub-row" href="ozel-yazilim.html"><span class="hub-v">Özel Yazılım</span><span class="hub-line"></span><span class="hub-k">01</span></a>
+        <a class="hub-row" href="is-analizi.html"><span class="hub-v">İş Analizi</span><span class="hub-line"></span><span class="hub-k">02</span></a>
+        <a class="hub-row" href="proje-yonetimi.html"><span class="hub-v">Proje Yönetimi</span><span class="hub-line"></span><span class="hub-k">03</span></a>
+        <a class="hub-row" href="otomasyon.html"><span class="hub-v">Otomasyon</span><span class="hub-line"></span><span class="hub-k">04</span></a>
+        <a class="hub-row" href="entegrasyon.html"><span class="hub-v">Entegrasyon</span><span class="hub-line"></span><span class="hub-k">05</span></a>
+        <a class="hub-row" href="is-zekasi.html"><span class="hub-v">İş Zekâsı</span><span class="hub-line"></span><span class="hub-k">06</span></a>
       </div>
-      <div class="hub-foot"><span class="dot" aria-hidden="true"></span>Gerçek zamanlı izleme · hata yönetimi &amp; yeniden deneme</div>
+      <div class="hub-foot"><span class="dot" aria-hidden="true"></span>Univera yetkili iş ortağı</div>
     </div>
   </div>
 </section>
@@ -316,7 +317,7 @@ footer{background:var(--ink);border-top:1px solid var(--navy-line)}
         </span>
       </div>
       <p>Dijital dönüşüm çözümleriyle operasyonel verimliliğinizi artırıyoruz.</p>
-      <a class="ft-badge" href="https://isortagi.univera.com.tr" target="_blank" rel="noopener">Univera Yetkili İş Ortağı</a>
+      <a class="ft-badge" href="https://isortagi.univera.com.tr" target="_blank" rel="noopener"><img src="univera.svg" alt="Univera" width="74" height="39"><span class="ft-badge-div" aria-hidden="true"></span><span class="ft-badge-txt"><span class="ft-badge-k">AUTHORIZED PARTNER</span><span class="ft-badge-n">Univera Yetkili İş Ortağı</span></span></a>
     </div>
     <div class="ft-col">
       <h4>Hizmetler</h4>
