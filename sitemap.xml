@@ -200,60 +200,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://4simple.com.tr/stockmate.html</loc>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://4simple.com.tr/stockmate.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://4simple.com.tr/en/stockmate.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://4simple.com.tr/stockmate.html"/>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://4simple.com.tr/en/stockmate.html</loc>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://4simple.com.tr/stockmate.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://4simple.com.tr/en/stockmate.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://4simple.com.tr/stockmate.html"/>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://4simple.com.tr/webplus.html</loc>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://4simple.com.tr/webplus.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://4simple.com.tr/en/webplus.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://4simple.com.tr/webplus.html"/>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://4simple.com.tr/en/webplus.html</loc>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://4simple.com.tr/webplus.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://4simple.com.tr/en/webplus.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://4simple.com.tr/webplus.html"/>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://4simple.com.tr/questmate.html</loc>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://4simple.com.tr/questmate.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://4simple.com.tr/en/questmate.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://4simple.com.tr/questmate.html"/>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://4simple.com.tr/en/questmate.html</loc>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://4simple.com.tr/questmate.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://4simple.com.tr/en/questmate.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://4simple.com.tr/questmate.html"/>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://4simple.com.tr/trassir.html</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://4simple.com.tr/trassir.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://4simple.com.tr/en/trassir.html"/>
