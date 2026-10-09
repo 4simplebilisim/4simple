@@ -152,6 +152,11 @@ footer{background:var(--ink);padding:60px 0 32px}
  .fg{grid-template-columns:1fr 1fr}.fg>div:first-child{grid-column:1/-1}
 }
 @media(max-width:767px){
+ .hd{gap:10px}
+ .brand span,.bname{font-size:17px!important;white-space:nowrap}
+ .hd .btn-warm,.nav-right .btn-p{display:none}
+ .lang{white-space:nowrap}
+
  :root{--pad:20px}.hero h1{font-size:31px}.center h2,.shd h2,.cta h2{font-size:28px}
  .sec{padding:60px 0}.hgrid{grid-template-columns:1fr}.fg{grid-template-columns:1fr}
  .mstat{right:12px}
@@ -416,11 +421,12 @@ select{appearance:none;background-image:url("data:image/svg+xml;charset=utf-8,%3
     <nav class="nav" aria-label="Ana menü">
       <a href="../index.html#hizmetler">Hizmetler</a>
       <a href="../index.html#urunler">Ürünler</a>
-      <a href="../index.html#neden">Neden Biz</a>
+      <a href="../index.html#yaklasim">Yaklaşımımız</a>
+      <a href="index.html">Blog</a>
     </nav>
     <div class="nav-right">
       <span class="divider" aria-hidden="true"></span>
-      <span class="lang"><a href="../onegate-procurement.html" class="on">TR</a> / <a href="../en/onegate-procurement.html">EN</a></span>
+      <span class="lang"><a href="index.html" class="on">TR</a> / <a href="../en/index.html">EN</a></span>
       <a href="../demo-talep.html" class="btn btn-p">Demo Talep Et</a>
       <button class="burger" id="burger" aria-label="Menüyü aç" aria-expanded="false" aria-controls="mobmenu">
         <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
@@ -430,7 +436,8 @@ select{appearance:none;background-image:url("data:image/svg+xml;charset=utf-8,%3
   <div class="mob shell" id="mobmenu">
     <a href="../index.html#hizmetler">Hizmetler</a>
     <a href="../index.html#urunler">Ürünler</a>
-    <a href="../index.html#neden">Neden Biz</a>
+    <a href="../index.html#yaklasim">Yaklaşımımız</a>
+    <a href="index.html">Blog</a>
     <a href="../demo-talep.html">Demo Talep Et</a>
   </div>
 </header>
