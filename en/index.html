@@ -208,23 +208,13 @@ footer{background:var(--ink);padding:60px 0 32px}
 .fl a{font-size:14px;color:var(--on2)}.fl a:hover{color:#fff}
 .fbot{border-top:1px solid var(--navy-line);padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px;color:var(--on4)}
 
-.burger{display:none;background:none;border:0;padding:6px;color:var(--navy);cursor:pointer}
-.mob{display:none;border-top:1px solid var(--border-soft);padding:6px var(--pad) 16px;max-width:var(--shell);margin:0 auto}
-.mob.open{display:block}
-.mob a{display:block;padding:12px 0;font-size:15px;color:var(--text);border-bottom:1px solid var(--border-soft)}
-.mob a:last-child{border-bottom:0}
 @media(max-width:1023px){
  .hero-in,.method,.g2,.cta{grid-template-columns:1fr}
- .hero h1{font-size:40px}.nav{display:none}.burger{display:block}
+ .hero h1{font-size:40px}.nav{display:none}
  .cta-l{padding:64px var(--pad)}.cta-r{min-height:240px}
  .fg{grid-template-columns:1fr 1fr}.fg>div:first-child{grid-column:1/-1}
 }
 @media(max-width:767px){
- .hd{gap:10px}
- .brand span,.bname{font-size:17px!important;white-space:nowrap}
- .hd .btn-warm,.nav-right .btn-p{display:none}
- .lang{white-space:nowrap}
-
  :root{--pad:20px}.hero h1{font-size:31px}.center h2,.shd h2,.cta h2{font-size:28px}
  .sec{padding:60px 0}.hgrid{grid-template-columns:1fr}.fg{grid-template-columns:1fr}
  .mstat{right:12px}
@@ -243,15 +233,7 @@ footer{background:var(--ink);padding:60px 0 32px}
   <div class="hd-r">
     <span class="lang"><a href="../index.html">TR</a> / <a href="index.html" class="on">EN</a></span>
     <a href="demo-talep.html" class="btn btn-warm" style="padding:11px 20px;font-size:14px">Request Demo</a>
-  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobmenu"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   </div>
-</div>
-<div class="mob" id="mobmenu">
-  <a href="#hizmetler">Services</a>
-  <a href="#urunler">Products</a>
-  <a href="#yaklasim">Our Approach</a>
-  <a href="../blog/">Blog</a>
-  <a href="demo-talep.html">Request Demo</a>
 </div></header>
 
 <section class="hero">
@@ -396,18 +378,5 @@ footer{background:var(--ink);padding:60px 0 32px}
 </div></footer>
 
 
-<script>
-(function(){
-  var b=document.getElementById('burger'),m=document.getElementById('mobmenu');
-  if(!b||!m)return;
-  b.addEventListener('click',function(){
-    var o=m.classList.toggle('open');
-    b.setAttribute('aria-expanded',o?'true':'false');
-  });
-  m.addEventListener('click',function(e){
-    if(e.target.tagName==='A'){m.classList.remove('open');b.setAttribute('aria-expanded','false');}
-  });
-})();
-</script>
 </body>
 </html>
