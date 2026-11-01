@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Business Intelligence &amp; BI | 4Simple IT</title>
+<title>Business Intelligence and BI Reporting | 4Simple</title>
 <meta name="description" content="We turn scattered data into live dashboards and reports: ETL setup, forecasting, automated reporting and real-time insight.">
 <link rel="canonical" href="https://4simple.com.tr/en/is-zekasi.html">
 <link rel="alternate" hreflang="tr" href="https://4simple.com.tr/is-zekasi.html">
@@ -15,14 +15,14 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="tr_TR">
 <meta property="og:url" content="https://4simple.com.tr/en/is-zekasi.html">
-<meta property="og:title" content="Business Intelligence &amp;amp; BI | 4Simple IT">
+<meta property="og:title" content="Business Intelligence and BI Reporting | 4Simple">
 <meta property="og:description" content="We turn scattered data into live dashboards and reports: ETL setup, forecasting, automated reporting and real-time insight.">
 <meta property="og:image" content="https://4simple.com.tr/og-4simple.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Business Intelligence &amp;amp; BI | 4Simple IT">
+<meta name="twitter:title" content="Business Intelligence and BI Reporting | 4Simple">
 <meta name="twitter:description" content="We turn scattered data into live dashboards and reports: ETL setup, forecasting, automated reporting and real-time insight.">
 <meta name="twitter:image" content="https://4simple.com.tr/og-4simple.png">
 
@@ -37,12 +37,7 @@
 }
 </script>
 <link rel="icon" type="image/svg+xml" href="../4simple-favicon.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../fonts/outfit.css">
 <style>
 :root{
  --bg:#fff;--bg-alt:#F4F6F9;--border:#E2E8F0;--border-soft:#E8EDF3;--border-strong:#C6D2E2;
@@ -80,7 +75,7 @@ header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.95);backdro
 /* hero — görselli koyu */
 .hero{position:relative;background:var(--navy-deep);overflow:hidden}
 .hero-bg{position:absolute;inset:0;background:linear-gradient(120deg,#0E1A30,#1B2B4B 45%,#16243E);
- background-image:linear-gradient(115deg,rgba(11,19,36,.88) 0%,rgba(16,28,52,.74) 55%,rgba(22,36,62,.66) 100%),url('../img/hero.jpg');
+ background-image:linear-gradient(115deg,rgba(11,19,36,.88) 0%,rgba(16,28,52,.74) 55%,rgba(22,36,62,.66) 100%),url('../img/hero.jpg');background-image:linear-gradient(115deg,rgba(11,19,36,.88) 0%,rgba(16,28,52,.74) 55%,rgba(22,36,62,.66) 100%),image-set(url('../img/hero.webp') type('image/webp'),url('../img/hero.jpg') type('image/jpeg'));
  background-size:cover;background-position:center}
 .hero-in{position:relative;z-index:1;max-width:var(--shell);margin:0 auto;padding:96px var(--pad);
  display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
@@ -143,7 +138,7 @@ header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.95);backdro
 .method{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
 .mimg{position:relative;border-radius:16px;overflow:hidden;aspect-ratio:4/5;
  background:linear-gradient(150deg,#22324F,#3E5480 55%,#1B2B4B);
- background-image:url('../img/metodoloji.jpg');background-size:cover;background-position:center}
+ background-image:url('../img/metodoloji.jpg');background-image:image-set(url('../img/metodoloji.webp') type('image/webp'),url('../img/metodoloji.jpg') type('image/jpeg'));background-size:cover;background-position:center}
 .mstat{position:absolute;right:-8px;bottom:26px;background:var(--navy);border-radius:14px;padding:20px 24px;max-width:215px}
 .mstat b{display:block;font-size:30px;font-weight:700;color:var(--accent-soft);line-height:1;margin-bottom:6px}
 .mstat span{font-size:13px;color:var(--on2);line-height:1.5}
@@ -161,7 +156,7 @@ header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.95);backdro
 .cta h2{color:#fff;font-size:38px;letter-spacing:-1.2px;margin:14px 0 14px}
 .cta p{color:var(--on2);font-size:16.5px;margin-bottom:28px;max-width:460px}
 .cta-r{min-height:380px;position:relative;background:#0E1A30;
- background-image:linear-gradient(90deg,rgba(27,43,75,.85),rgba(27,43,75,0) 42%),url('../img/cta.jpg');background-size:cover;background-position:center}
+ background-image:linear-gradient(90deg,rgba(27,43,75,.85),rgba(27,43,75,0) 42%),url('../img/cta.jpg');background-image:linear-gradient(90deg,rgba(27,43,75,.85),rgba(27,43,75,0) 42%),image-set(url('../img/cta.webp') type('image/webp'),url('../img/cta.jpg') type('image/jpeg'));background-size:cover;background-position:center}
 
 /* footer */
 footer{background:var(--ink);padding:60px 0 32px}
@@ -179,6 +174,11 @@ footer{background:var(--ink);padding:60px 0 32px}
  .fg{grid-template-columns:1fr 1fr}.fg>div:first-child{grid-column:1/-1}
 }
 @media(max-width:767px){
+ .hd{gap:10px}
+ .brand span,.bname{font-size:17px!important;white-space:nowrap}
+ .hd .btn-warm,.nav-right .btn-p{display:none}
+ .lang{white-space:nowrap}
+
  :root{--pad:20px}.hero h1{font-size:31px}.center h2,.shd h2,.cta h2{font-size:28px}
  .sec{padding:60px 0}.hgrid{grid-template-columns:1fr}.fg{grid-template-columns:1fr}
  .mstat{right:12px}
@@ -204,7 +204,7 @@ header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.95);backdro
 /* sayfa hero — koyu + görsel */
 .page-hero{position:relative;background:var(--navy-deep);overflow:hidden}
 .page-hero::before{content:"";position:absolute;inset:0;
- background-image:linear-gradient(115deg,rgba(11,19,36,.9),rgba(16,28,52,.78) 55%,rgba(22,36,62,.7)),url('../img/hero.jpg');
+ background-image:linear-gradient(115deg,rgba(11,19,36,.9),rgba(16,28,52,.78) 55%,rgba(22,36,62,.7)),url('../img/hero.jpg');background-image:linear-gradient(115deg,rgba(11,19,36,.9),rgba(16,28,52,.78) 55%,rgba(22,36,62,.7)),image-set(url('../img/hero.webp') type('image/webp'),url('../img/hero.jpg') type('image/jpeg'));
  background-size:cover;background-position:center}
 .hero-content{position:relative;z-index:1;max-width:var(--shell);margin:0 auto;padding:82px var(--pad) 90px;display:flex;flex-direction:column;align-items:flex-start;gap:18px}
 .hero-split{position:relative;z-index:1;max-width:var(--shell);margin:0 auto;padding:82px var(--pad) 90px;display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
@@ -250,7 +250,9 @@ header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.95);backdro
 .detail-text{display:flex;flex-direction:column;gap:14px;align-items:flex-start}
 .detail-text h3{font-size:30px;letter-spacing:-.8px;color:var(--ink)}
 .detail-text p{font-size:16.5px;line-height:1.7;color:var(--text)}
-.detail-visual{background:#fff;border:1px solid var(--border);border-radius:16px;padding:32px}
+.detail-visual{background:#fff;border:1px solid var(--border);border-radius:16px;padding:22px;display:flex;align-items:center;justify-content:center;min-height:250px}
+.detail-visual .dv{width:100%;max-width:340px;height:auto;display:block}
+
 .check-list{display:flex;flex-direction:column;gap:13px;list-style:none}
 .check-list li{display:flex;align-items:flex-start;gap:11px;font-size:14.5px;color:var(--text)}
 .check-list svg{width:16px;height:16px;flex-shrink:0;margin-top:3px;color:var(--accent);stroke:var(--accent)}
@@ -284,7 +286,7 @@ footer{background:var(--ink);padding:60px 0 32px;border:0}
 .footer-col h5{color:#fff;font-size:15px;margin-bottom:18px;letter-spacing:0;text-transform:none;font-weight:600}
 .footer-col a{font-size:14px;color:var(--on2);padding:6px 0}
 .footer-col a:hover{color:#fff}
-.footer-bottom{max-width:var(--shell);margin:0 auto;padding:24px var(--pad) 0;border-top:1px solid var(--navy-line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px;color:var(--on4)}
+.footer-bottom{max-width:var(--shell);margin:0 auto;padding:24px var(--pad) 0;border-top:1px solid var(--navy-line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px;color:var(--on4)}.footer-bottom .f-yasal{display:flex;gap:7px;flex-wrap:wrap;align-items:center}.footer-bottom a{color:inherit;text-decoration:none}.footer-bottom a:hover{color:#fff;text-decoration:underline}.footer-bottom .f-yasal>span{opacity:.45}
 .footer-bottom a:hover{color:#fff}
 
 /* hub kartı (entegrasyon) */
@@ -426,12 +428,12 @@ select{appearance:none;background-image:url("data:image/svg+xml;charset=utf-8,%3
     <nav class="nav" aria-label="Main menu">
       <a href="index.html#hizmetler">Services</a>
       <a href="index.html#urunler">Products</a>
-      <a href="index.html#neden">Why Us</a>
+      <a href="index.html#yaklasim">Our Approach</a>
+      <a href="../blog/">Blog</a>
     </nav>
     <div class="nav-right">
       <span class="divider" aria-hidden="true"></span>
-      <span class="lang"><a href="../is-zekasi.html">TR</a>
-        <a href="../blog/">Blog</a> / <a href="is-zekasi.html" class="on">EN</a></span>
+      <span class="lang"><a href="../is-zekasi.html">TR</a> / <a href="is-zekasi.html" class="on">EN</a></span>
       <a href="demo-talep.html" class="btn btn-p">Request Demo</a>
       <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobmenu">
         <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
@@ -441,7 +443,8 @@ select{appearance:none;background-image:url("data:image/svg+xml;charset=utf-8,%3
   <div class="mob shell" id="mobmenu">
     <a href="index.html#hizmetler">Services</a>
     <a href="index.html#urunler">Products</a>
-    <a href="index.html#neden">Why Us</a>
+    <a href="index.html#yaklasim">Our Approach</a>
+    <a href="../blog/">Blog</a>
     <a href="demo-talep.html">Request Demo</a>
   </div>
 </header>
@@ -473,10 +476,26 @@ select{appearance:none;background-image:url("data:image/svg+xml;charset=utf-8,%3
 <section><div class="section-inner">
 <div class="detail-block"><div class="detail-text"><div class="section-tag">Tools</div><h3>Our Technology Partners</h3><p>We work with the most suitable BI platform for your project.</p>
 <ul class="check-list"><li><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Power BI / Tableau / Looker</li><li><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Apache Superset / Metabase</li><li><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Python (Pandas, Scikit-learn)</li><li><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Custom Dashboard Development</li></ul></div>
-<div class="detail-visual"><svg class="visual-icon" width="180" height="180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="0.5"><svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" ><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg></svg></div></div>
+<div class="detail-visual"><svg class="dv" viewBox="0 0 320 220" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<defs><style>
+.bx{fill:#fff;stroke:#D8E2F0;stroke-width:1.4}
+.bg{fill:#F4F7FC}
+.ln{stroke:#C6D2E2;stroke-width:1.4;stroke-linecap:round}
+.ac{stroke:#2563C9;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;fill:none}
+.af{fill:#2563C9}.ap{fill:#DCE8FB}.wf{fill:#E2570F}.wp{fill:#FDE3D4}.gf{fill:#0F9D58}.gp{fill:#DCF1E7}
+.tx{fill:#C6D2E2}
+</style></defs><rect x="22" y="26" width="276" height="168" rx="10" fill="#fff" stroke="#D8E2F0" stroke-width="1.4"/><path d="M22 50h276" stroke="#E8EDF3" stroke-width="1.4"/><circle cx="38" cy="38" r="3.5" fill="#DCE8FB"/><rect x="50" y="34.5" width="62" height="7" rx="3" fill="#C6D2E2"/><rect x="248" y="33" width="36" height="10" rx="5" fill="#DCE8FB"/><rect x="36" y="62" width="72" height="34" rx="7" fill="#F4F7FC"/><rect x="46" y="0" width="0" height="0"/><rect x="46" y="70" width="26" height="6" rx="3" fill="#C6D2E2"/><rect x="46" y="81" width="44" height="9" rx="3" fill="#2563C9"/><rect x="122" y="62" width="72" height="34" rx="7" fill="#F4F7FC"/><rect x="46" y="0" width="0" height="0"/><rect x="132" y="70" width="26" height="6" rx="3" fill="#C6D2E2"/><rect x="132" y="81" width="44" height="9" rx="3" fill="#0F9D58"/><rect x="208" y="62" width="72" height="34" rx="7" fill="#F4F7FC"/><rect x="46" y="0" width="0" height="0"/><rect x="218" y="70" width="26" height="6" rx="3" fill="#C6D2E2"/><rect x="218" y="81" width="44" height="9" rx="3" fill="#E2570F"/><rect x="36" y="108" width="150" height="74" rx="7" fill="#F4F7FC"/><rect x="50" y="150" width="12" height="22" rx="3" fill="#DCE8FB"/><rect x="72" y="138" width="12" height="34" rx="3" fill="#DCE8FB"/><rect x="94" y="144" width="12" height="28" rx="3" fill="#DCE8FB"/><rect x="116" y="126" width="12" height="46" rx="3" fill="#DCE8FB"/><rect x="138" y="134" width="12" height="38" rx="3" fill="#DCE8FB"/><rect x="160" y="118" width="12" height="54" rx="3" fill="#DCE8FB"/><path d="M56 150 L78 138 L100 144 L122 126 L144 132 L166 114" stroke="#2563C9" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><rect x="196" y="108" width="88" height="74" rx="7" fill="#F4F7FC"/><circle cx="240" cy="145" r="24" fill="none" stroke="#DCE8FB" stroke-width="9"/><path d="M240 121a24 24 0 0120.8 36" fill="none" stroke="#2563C9" stroke-width="9" stroke-linecap="round"/></svg></div></div>
 <div class="detail-block reverse"><div class="detail-text"><div class="section-tag">Process</div><h3>From Data to Insight</h3><p>We are with you every step from collecting data to transforming it into action.</p>
 <ul class="check-list"><li><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Data Source Mapping</li><li><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>ETL / ELT Pipeline Kurulumu</li><li><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Dashboard & Report Development</li><li><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Training & User Adoption</li></ul></div>
-<div class="detail-visual"><svg class="visual-icon" width="180" height="180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="0.5"><svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" ><path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg></svg></div></div>
+<div class="detail-visual"><svg class="dv" viewBox="0 0 320 220" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<defs><style>
+.bx{fill:#fff;stroke:#D8E2F0;stroke-width:1.4}
+.bg{fill:#F4F7FC}
+.ln{stroke:#C6D2E2;stroke-width:1.4;stroke-linecap:round}
+.ac{stroke:#2563C9;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;fill:none}
+.af{fill:#2563C9}.ap{fill:#DCE8FB}.wf{fill:#E2570F}.wp{fill:#FDE3D4}.gf{fill:#0F9D58}.gp{fill:#DCF1E7}
+.tx{fill:#C6D2E2}
+</style></defs><path d="M46 40h228l-76 76v62l-76 26v-88z" fill="#F4F7FC" stroke="#C6D2E2" stroke-width="1.6"/><path d="M46 40h228" class="ac" stroke-width="3"/><circle cx="74" cy="28" r="5" class="ap"/><circle cx="100" cy="28" r="5" class="ap"/><circle cx="126" cy="28" r="5" class="ap"/><circle cx="152" cy="28" r="5" class="ap"/><circle cx="178" cy="28" r="5" class="ap"/><circle cx="204" cy="28" r="5" class="ap"/><circle cx="230" cy="28" r="5" class="ap"/><circle cx="256" cy="28" r="5" class="ap"/><circle cx="160" cy="150" r="22" class="af"/><path d="M152 150l6 6 11-13" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
 </div></section>
 
 <section class="cta-section">
@@ -501,9 +520,9 @@ select{appearance:none;background-image:url("data:image/svg+xml;charset=utf-8,%3
     <div class="footer-col"><h5>Products</h5><a href="onegate-wms.html">OneGate WMS</a>
       <a href="onegate-procurement.html">OneGate Procurement</a>
       <a href="4flow.html">4Flow</a>
-      <a href="4cast.html">4Cast</a><a href="trassir.html">Trassir</a></div>
+      <a href="4cast.html">4Cast</a><a href="trassir.html">Trassir</a><a href="veri-guvenligi.html">Data Security</a></div>
   </div>
-  <div class="footer-bottom"><span>&copy; 2022 4Simple IT. All rights reserved.</span>info@4simple.com.tr</div>
+  <div class="footer-bottom"><span>&copy; 2022&ndash;2026 4Simple IT. All rights reserved.</span><span class="f-yasal"><a href="kvkk-aydinlatma.html">Privacy Notice</a><span aria-hidden="true">·</span><a href="cerez-politikasi.html">Cookie Policy</a><span aria-hidden="true">·</span><a href="#" data-kvkk-tercih>Cookie Preferences</a></span><span><a href="mailto:info@4simple.com.tr">info@4simple.com.tr</a></span></div>
 </footer>
 
 
@@ -523,4 +542,23 @@ select{appearance:none;background-image:url("data:image/svg+xml;charset=utf-8,%3
   canvas.addEventListener('mouseleave',()=>{mouse.x=-9999;mouse.y=-9999});
   canvas.addEventListener('click',e=>{const r=canvas.getBoundingClientRect();shocks.push({x:e.clientX-r.left,y:e.clientY-r.top,t:0,mx:15})});
 canvas.addEventListener('touchstart',e=>{const r=canvas.getBoundingClientRect(),t=e.touches[0];shocks.push({x:t.clientX-r.left,y:t.clientY-r.top,t:0,mx:15})},{passive:true});
-canvas.addEventListener('touchmove',e=>{e.preventDefault();const r=canvas.getBoundingClientRect(),t=e.touches[0];mouse.x=t.clientX-r.left;mouse.y=t.clientY
+canvas.addEventListener('touchmove',e=>{e.preventDefault();const r=canvas.getBoundingClientRect(),t=e.touches[0];mouse.x=t.clientX-r.left;mouse.y=t.clientY-r.top;},{passive:false});
+})();
+</script>
+<script>
+(function(){
+  var b=document.getElementById('burger'),m=document.getElementById('mobmenu');
+  if(!b||!m)return;
+  b.addEventListener('click',function(){
+    var o=m.classList.toggle('open');
+    b.setAttribute('aria-expanded',o?'true':'false');
+    b.setAttribute('aria-label',o?'Close menu':'Open menu');
+  });
+  m.addEventListener('click',function(e){
+    if(e.target.tagName==='A'){m.classList.remove('open');b.setAttribute('aria-expanded','false');}
+  });
+})();
+</script>
+<script src="../kvkk/cerez.js" defer></script>
+</body>
+</html>
