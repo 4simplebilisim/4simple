@@ -89,8 +89,9 @@ table{width:100%;border-collapse:collapse;font-size:14px;min-width:620px}
 th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--border);vertical-align:top}
 th{background:var(--bg-alt);font-weight:650;color:var(--navy);white-space:nowrap}
 tr:last-child td{border-bottom:none}
-td code{font-size:12.5px;background:#EEF2F7;padding:2px 5px;border-radius:4px;
-word-break:break-all;font-family:ui-monospace,Menlo,Consolas,monospace}
+td code{display:inline-block;font-size:12.5px;background:#EEF2F7;padding:2px 6px;
+border-radius:4px;overflow-wrap:break-word;font-family:ui-monospace,Menlo,Consolas,monospace}
+table th:first-child,table td:first-child{min-width:168px}
 .etk{display:inline-block;font-size:11.5px;font-weight:650;padding:2px 8px;
 border-radius:20px;white-space:nowrap}
 .etk-z{background:#E8F6EF;color:#0B6B3D}
@@ -160,7 +161,7 @@ processor</strong>, processing the data only on your instructions and in order t
 service. That distinction means it is you, not us, who decides what the data is used for.</p>
 <div class="uyari">
 <p>The rights and obligations between the parties are set out in writing in a <strong>data
-processing agreement (DPA)</strong>. We provide our DPA on request:
+processing agreement (DPA)</strong>. We share our data processing agreement at the contracting stage:
 <a href="mailto:info@4simple.com.tr?subject=Data%20processing%20agreement%20request">info@4simple.com.tr</a></p>
 </div>
 
@@ -183,9 +184,9 @@ you; we provide the operations service only.</li>
 
 <h2>Isolation of company data</h2>
 <p>In a cloud deployment each customer's data is kept <strong>isolated</strong> from every
-other. A user of one company cannot see another company's records, not even through an
-authorisation error; permissions are defined separately at company, warehouse and user-role
-level. Our support team's access is likewise limited to your request and is logged.</p>
+other. Permissions are defined separately at company, warehouse and user-role level, and every query
+is scoped to the company identity. Our support team's access is likewise limited to your request
+and is logged.</p>
 
 <h2>Lumen AI and your data</h2>
 <p>Lumen AI works on your operational data, so we answer the most common question directly:
@@ -206,7 +207,7 @@ in writing that the deletion is complete.</p>
 <h2>Plainly put</h2>
 <p>This page presents no certificate and no audit result; we would rather not display a document
 we do not hold. What we describe here is how we deploy our products and how we work with your
-data. If you want to see which of these are contractually committed, ask for our DPA and
+data. If you want to see which of these are contractually committed, ask for our data processing agreement and
 technical annexes — our technical team answers questions directly.</p>
 <p><a href="demo-talep.html"><strong>Request a demo</strong></a> or write to
 <a href="mailto:info@4simple.com.tr">info@4simple.com.tr</a>.</p>
@@ -222,7 +223,7 @@ technical annexes — our technical team answers questions directly.</p>
     <div class="footer-col"><h5>Products</h5><a href="onegate-wms.html">OneGate WMS</a><a href="onegate-procurement.html">OneGate Procurement</a><a href="4flow.html">4Flow</a><a href="4cast.html">4Cast</a><a href="trassir.html">Trassir</a></div>
   </div>
   <div class="footer-bottom">
-    <span>&copy; 2022–2026 4Simple Bilişim. All rights reserved.</span>
+    <span>&copy; 2023–2026 4Simple IT. All rights reserved.</span>
     <span class="footer-yasal"><a href="kvkk-aydinlatma.html">Privacy Notice (KVKK)</a><span aria-hidden="true">·</span><a href="cerez-politikasi.html">Cookie Policy</a><span aria-hidden="true">·</span><a href="#" data-kvkk-tercih>Cookie Preferences</a></span>
   </div>
 </footer>

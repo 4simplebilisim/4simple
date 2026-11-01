@@ -89,8 +89,9 @@ table{width:100%;border-collapse:collapse;font-size:14px;min-width:620px}
 th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--border);vertical-align:top}
 th{background:var(--bg-alt);font-weight:650;color:var(--navy);white-space:nowrap}
 tr:last-child td{border-bottom:none}
-td code{font-size:12.5px;background:#EEF2F7;padding:2px 5px;border-radius:4px;
-word-break:break-all;font-family:ui-monospace,Menlo,Consolas,monospace}
+td code{display:inline-block;font-size:12.5px;background:#EEF2F7;padding:2px 6px;
+border-radius:4px;overflow-wrap:break-word;font-family:ui-monospace,Menlo,Consolas,monospace}
+table th:first-child,table td:first-child{min-width:168px}
 .etk{display:inline-block;font-size:11.5px;font-weight:650;padding:2px 8px;
 border-radius:20px;white-space:nowrap}
 .etk-z{background:#E8F6EF;color:#0B6B3D}
@@ -161,7 +162,7 @@ konumundadır. Bu ayrım, verilerinizin ne amaçla kullanılacağına karar vere
 olduğunuz anlamına gelir.</p>
 <div class="uyari">
 <p>Taraflar arasındaki yetki ve yükümlülükler <strong>veri işleme sözleşmesi (DPA)</strong> ile
-yazılı hale getirilir. DPA metnimizi talep üzerine sunuyoruz:
+yazılı hale getirilir. Veri işleme sözleşmesi metnimizi sözleşme aşamasında paylaşıyoruz:
 <a href="mailto:info@4simple.com.tr?subject=Veri%20i%C5%9Fleme%20s%C3%B6zle%C5%9Fmesi%20talebi">info@4simple.com.tr</a></p>
 </div>
 
@@ -183,9 +184,9 @@ işletim hizmeti veririz.</li>
 
 <h2>Firma verilerinin yalıtımı</h2>
 <p>Bulut kurulumunda her müşterinin verisi diğerlerinden <strong>yalıtılmış</strong> şekilde
-tutulur. Bir firmanın kullanıcısı, yetkilendirme hatasıyla bile başka bir firmanın kaydını
-göremez; yetkiler firma, depo ve kullanıcı rolü düzeyinde ayrı ayrı tanımlanır. Destek
-ekibimizin erişimi de talebinizle sınırlıdır ve kayıt altına alınır.</p>
+tutulur. Yetkiler firma, depo ve kullanıcı rolü düzeyinde ayrı ayrı tanımlanır ve her sorgu firma
+kimliğiyle sınırlandırılır. Destek ekibimizin erişimi de talebinizle sınırlıdır ve kayıt altına
+alınır.</p>
 
 <h2>Lumen AI ve verileriniz</h2>
 <p>Lumen AI, operasyonel verileriniz üzerinde çalışır. Bu nedenle en çok sorulan soruyu
@@ -207,7 +208,7 @@ Silme işleminin tamamlandığını yazılı olarak bildiririz.</p>
 <p>Bu sayfada bir belge veya denetim sonucu sunmuyoruz; sahip olmadığımız bir belgeyi varmış
 gibi göstermek istemeyiz. Burada anlattığımız, ürünlerimizi nasıl kurduğumuz ve verilerinizle
 nasıl çalıştığımızdır. Bunların hangilerinin sözleşmeyle taahhüt edildiğini görmek isterseniz
-DPA metnimizi ve teknik ek belgelerimizi isteyin — teknik ekibimiz sorularınızı doğrudan
+Veri işleme sözleşmemizi ve teknik ek belgelerimizi isteyin — teknik ekibimiz sorularınızı doğrudan
 yanıtlar.</p>
 <p><a href="demo-talep.html"><strong>Demo talebi oluşturun</strong></a> ya da
 <a href="mailto:info@4simple.com.tr">info@4simple.com.tr</a> adresine yazın.</p>
@@ -223,7 +224,7 @@ yanıtlar.</p>
     <div class="footer-col"><h5>Ürünler</h5><a href="onegate-wms.html">OneGate WMS</a><a href="onegate-procurement.html">OneGate Procurement</a><a href="4flow.html">4Flow</a><a href="4cast.html">4Cast</a><a href="trassir.html">Trassir</a></div>
   </div>
   <div class="footer-bottom">
-    <span>&copy; 2022–2026 4Simple Bilişim. Tüm hakları saklıdır.</span>
+    <span>&copy; 2023–2026 4Simple Bilişim. Tüm hakları saklıdır.</span>
     <span class="footer-yasal"><a href="kvkk-aydinlatma.html">KVKK Aydınlatma Metni</a><span aria-hidden="true">·</span><a href="cerez-politikasi.html">Çerez Politikası</a><span aria-hidden="true">·</span><a href="#" data-kvkk-tercih>Çerez Tercihleri</a></span>
   </div>
 </footer>
