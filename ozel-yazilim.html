@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Özel Yazılım Geliştirme | 4Simple</title>
+<title>Özel Yazılım Geliştirme — İzmir | 4Simple</title>
 <meta name="description" content="İş süreçlerinize birebir uyan, sıfırdan geliştirilen özel yazılım. Ölçeklenebilir mimari, modern teknoloji yığını, API-first entegrasyon desteği.">
 <link rel="canonical" href="https://4simple.com.tr/ozel-yazilim.html">
 <link rel="alternate" hreflang="tr" href="https://4simple.com.tr/ozel-yazilim.html">
@@ -15,14 +15,14 @@
 <meta property="og:locale" content="tr_TR">
 <meta property="og:locale:alternate" content="en_US">
 <meta property="og:url" content="https://4simple.com.tr/ozel-yazilim.html">
-<meta property="og:title" content="Özel Yazılım Geliştirme | 4Simple">
+<meta property="og:title" content="Özel Yazılım Geliştirme — İzmir | 4Simple">
 <meta property="og:description" content="İş süreçlerinize birebir uyan, sıfırdan geliştirilen özel yazılım. Ölçeklenebilir mimari, modern teknoloji yığını, API-first entegrasyon desteği.">
 <meta property="og:image" content="https://4simple.com.tr/og-4simple.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Özel Yazılım Geliştirme | 4Simple">
+<meta name="twitter:title" content="Özel Yazılım Geliştirme — İzmir | 4Simple">
 <meta name="twitter:description" content="İş süreçlerinize birebir uyan, sıfırdan geliştirilen özel yazılım. Ölçeklenebilir mimari, modern teknoloji yığını, API-first entegrasyon desteği.">
 <meta name="twitter:image" content="https://4simple.com.tr/og-4simple.png">
 
@@ -37,12 +37,7 @@
 }
 </script>
 <link rel="icon" type="image/svg+xml" href="4simple-favicon.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="fonts/outfit.css">
 <style>
 :root{
  --bg:#fff;--bg-alt:#F4F6F9;--border:#E2E8F0;--border-soft:#E8EDF3;--border-strong:#C6D2E2;
@@ -80,7 +75,7 @@ header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.95);backdro
 /* hero — görselli koyu */
 .hero{position:relative;background:var(--navy-deep);overflow:hidden}
 .hero-bg{position:absolute;inset:0;background:linear-gradient(120deg,#0E1A30,#1B2B4B 45%,#16243E);
- background-image:linear-gradient(115deg,rgba(11,19,36,.88) 0%,rgba(16,28,52,.74) 55%,rgba(22,36,62,.66) 100%),url('img/hero.jpg');
+ background-image:linear-gradient(115deg,rgba(11,19,36,.88) 0%,rgba(16,28,52,.74) 55%,rgba(22,36,62,.66) 100%),url('img/hero.jpg');background-image:linear-gradient(115deg,rgba(11,19,36,.88) 0%,rgba(16,28,52,.74) 55%,rgba(22,36,62,.66) 100%),image-set(url('img/hero.webp') type('image/webp'),url('img/hero.jpg') type('image/jpeg'));
  background-size:cover;background-position:center}
 .hero-in{position:relative;z-index:1;max-width:var(--shell);margin:0 auto;padding:96px var(--pad);
  display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
@@ -143,7 +138,7 @@ header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.95);backdro
 .method{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
 .mimg{position:relative;border-radius:16px;overflow:hidden;aspect-ratio:4/5;
  background:linear-gradient(150deg,#22324F,#3E5480 55%,#1B2B4B);
- background-image:url('img/metodoloji.jpg');background-size:cover;background-position:center}
+ background-image:url('img/metodoloji.jpg');background-image:image-set(url('img/metodoloji.webp') type('image/webp'),url('img/metodoloji.jpg') type('image/jpeg'));background-size:cover;background-position:center}
 .mstat{position:absolute;right:-8px;bottom:26px;background:var(--navy);border-radius:14px;padding:20px 24px;max-width:215px}
 .mstat b{display:block;font-size:30px;font-weight:700;color:var(--accent-soft);line-height:1;margin-bottom:6px}
 .mstat span{font-size:13px;color:var(--on2);line-height:1.5}
@@ -161,7 +156,7 @@ header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.95);backdro
 .cta h2{color:#fff;font-size:38px;letter-spacing:-1.2px;margin:14px 0 14px}
 .cta p{color:var(--on2);font-size:16.5px;margin-bottom:28px;max-width:460px}
 .cta-r{min-height:380px;position:relative;background:#0E1A30;
- background-image:linear-gradient(90deg,rgba(27,43,75,.85),rgba(27,43,75,0) 42%),url('img/cta.jpg');background-size:cover;background-position:center}
+ background-image:linear-gradient(90deg,rgba(27,43,75,.85),rgba(27,43,75,0) 42%),url('img/cta.jpg');background-image:linear-gradient(90deg,rgba(27,43,75,.85),rgba(27,43,75,0) 42%),image-set(url('img/cta.webp') type('image/webp'),url('img/cta.jpg') type('image/jpeg'));background-size:cover;background-position:center}
 
 /* footer */
 footer{background:var(--ink);padding:60px 0 32px}
@@ -179,6 +174,11 @@ footer{background:var(--ink);padding:60px 0 32px}
  .fg{grid-template-columns:1fr 1fr}.fg>div:first-child{grid-column:1/-1}
 }
 @media(max-width:767px){
+ .hd{gap:10px}
+ .brand span,.bname{font-size:17px!important;white-space:nowrap}
+ .hd .btn-warm,.nav-right .btn-p{display:none}
+ .lang{white-space:nowrap}
+
  :root{--pad:20px}.hero h1{font-size:31px}.center h2,.shd h2,.cta h2{font-size:28px}
  .sec{padding:60px 0}.hgrid{grid-template-columns:1fr}.fg{grid-template-columns:1fr}
  .mstat{right:12px}
@@ -204,7 +204,7 @@ header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.95);backdro
 /* sayfa hero — koyu + görsel */
 .page-hero{position:relative;background:var(--navy-deep);overflow:hidden}
 .page-hero::before{content:"";position:absolute;inset:0;
- background-image:linear-gradient(115deg,rgba(11,19,36,.9),rgba(16,28,52,.78) 55%,rgba(22,36,62,.7)),url('img/hero.jpg');
+ background-image:linear-gradient(115deg,rgba(11,19,36,.9),rgba(16,28,52,.78) 55%,rgba(22,36,62,.7)),url('img/hero.jpg');background-image:linear-gradient(115deg,rgba(11,19,36,.9),rgba(16,28,52,.78) 55%,rgba(22,36,62,.7)),image-set(url('img/hero.webp') type('image/webp'),url('img/hero.jpg') type('image/jpeg'));
  background-size:cover;background-position:center}
 .hero-content{position:relative;z-index:1;max-width:var(--shell);margin:0 auto;padding:82px var(--pad) 90px;display:flex;flex-direction:column;align-items:flex-start;gap:18px}
 .hero-split{position:relative;z-index:1;max-width:var(--shell);margin:0 auto;padding:82px var(--pad) 90px;display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
@@ -250,7 +250,9 @@ header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.95);backdro
 .detail-text{display:flex;flex-direction:column;gap:14px;align-items:flex-start}
 .detail-text h3{font-size:30px;letter-spacing:-.8px;color:var(--ink)}
 .detail-text p{font-size:16.5px;line-height:1.7;color:var(--text)}
-.detail-visual{background:#fff;border:1px solid var(--border);border-radius:16px;padding:32px}
+.detail-visual{background:#fff;border:1px solid var(--border);border-radius:16px;padding:22px;display:flex;align-items:center;justify-content:center;min-height:250px}
+.detail-visual .dv{width:100%;max-width:340px;height:auto;display:block}
+
 .check-list{display:flex;flex-direction:column;gap:13px;list-style:none}
 .check-list li{display:flex;align-items:flex-start;gap:11px;font-size:14.5px;color:var(--text)}
 .check-list svg{width:16px;height:16px;flex-shrink:0;margin-top:3px;color:var(--accent);stroke:var(--accent)}
@@ -284,7 +286,7 @@ footer{background:var(--ink);padding:60px 0 32px;border:0}
 .footer-col h5{color:#fff;font-size:15px;margin-bottom:18px;letter-spacing:0;text-transform:none;font-weight:600}
 .footer-col a{font-size:14px;color:var(--on2);padding:6px 0}
 .footer-col a:hover{color:#fff}
-.footer-bottom{max-width:var(--shell);margin:0 auto;padding:24px var(--pad) 0;border-top:1px solid var(--navy-line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px;color:var(--on4)}
+.footer-bottom{max-width:var(--shell);margin:0 auto;padding:24px var(--pad) 0;border-top:1px solid var(--navy-line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px;color:var(--on4)}.footer-bottom .f-yasal{display:flex;gap:7px;flex-wrap:wrap;align-items:center}.footer-bottom a{color:inherit;text-decoration:none}.footer-bottom a:hover{color:#fff;text-decoration:underline}.footer-bottom .f-yasal>span{opacity:.45}
 .footer-bottom a:hover{color:#fff}
 
 /* hub kartı (entegrasyon) */
@@ -426,7 +428,8 @@ select{appearance:none;background-image:url("data:image/svg+xml;charset=utf-8,%3
     <nav class="nav" aria-label="Ana menü">
       <a href="index.html#hizmetler">Hizmetler</a>
       <a href="index.html#urunler">Ürünler</a>
-      <a href="index.html#neden">Neden Biz</a>
+      <a href="index.html#yaklasim">Yaklaşımımız</a>
+      <a href="blog/">Blog</a>
     </nav>
     <div class="nav-right">
       <span class="divider" aria-hidden="true"></span>
@@ -440,7 +443,8 @@ select{appearance:none;background-image:url("data:image/svg+xml;charset=utf-8,%3
   <div class="mob shell" id="mobmenu">
     <a href="index.html#hizmetler">Hizmetler</a>
     <a href="index.html#urunler">Ürünler</a>
-    <a href="index.html#neden">Neden Biz</a>
+    <a href="index.html#yaklasim">Yaklaşımımız</a>
+    <a href="blog/">Blog</a>
     <a href="demo-talep.html">Demo Talep Et</a>
   </div>
 </header>
@@ -472,10 +476,26 @@ select{appearance:none;background-image:url("data:image/svg+xml;charset=utf-8,%3
 <section><div class="section-inner">
 <div class="detail-block"><div class="detail-text"><div class="section-tag">Analiz & Tasarım</div><h3>İhtiyacınızı Derinlemesine Anlıyoruz</h3><p>Projeye başlamadan önce iş süreçlerinizi detaylıca analiz ediyoruz. Kullanıcı hikayeleri, akış diyagramları ve wireframe'ler ile projenin kapsamını netleştiriyoruz.</p>
 <ul class="check-list"><li><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>İş Süreci Haritalama</li><li><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Kullanıcı Hikayeleri & Senaryolar</li><li><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>UX/UI Wireframe & Prototip</li><li><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Teknik Fizibilite Raporu</li></ul></div>
-<div class="detail-visual"><svg class="visual-icon" width="180" height="180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="0.5"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/></svg></div></div>
+<div class="detail-visual"><svg class="dv" viewBox="0 0 320 220" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<defs><style>
+.bx{fill:#fff;stroke:#D8E2F0;stroke-width:1.4}
+.bg{fill:#F4F7FC}
+.ln{stroke:#C6D2E2;stroke-width:1.4;stroke-linecap:round}
+.ac{stroke:#2563C9;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;fill:none}
+.af{fill:#2563C9}.ap{fill:#DCE8FB}.wf{fill:#E2570F}.wp{fill:#FDE3D4}.gf{fill:#0F9D58}.gp{fill:#DCF1E7}
+.tx{fill:#C6D2E2}
+</style></defs><rect x="28" y="26" width="180" height="168" rx="8" class="bx"/><rect x="48" y="52" width="120" height="7" rx="2" class="tx"/><rect x="48" y="74" width="102" height="7" rx="2" class="tx"/><rect x="48" y="96" width="84" height="7" rx="2" class="tx"/><rect x="48" y="118" width="66" height="7" rx="2" class="tx"/><rect x="48" y="140" width="48" height="7" rx="2" class="tx"/><circle cx="222" cy="150" r="42" fill="#fff" stroke="#2563C9" stroke-width="2.4"/><path d="M252 180l24 24" class="ac" stroke-width="3"/><path d="M204 150l12 12 22-26" class="ac" stroke-width="3"/></svg></div></div>
 <div class="detail-block reverse"><div class="detail-text"><div class="section-tag">Geliştirme & Test</div><h3>Agile Metodoloji ile Hızlı Teslimat</h3><p>2 haftalık sprint döngüleri ile geliştirme yapıyoruz. Her sprint sonunda çalışan bir ürün parçası teslim ediyoruz.</p>
 <ul class="check-list"><li><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>2 Haftalık Sprint Döngüleri</li><li><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>CI/CD Pipeline</li><li><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Otomatik Test Süitleri</li><li><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Şeffaf İlerleme Raporlaması</li></ul></div>
-<div class="detail-visual"><svg class="visual-icon" width="180" height="180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="0.5"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg></div></div>
+<div class="detail-visual"><svg class="dv" viewBox="0 0 320 220" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<defs><style>
+.bx{fill:#fff;stroke:#D8E2F0;stroke-width:1.4}
+.bg{fill:#F4F7FC}
+.ln{stroke:#C6D2E2;stroke-width:1.4;stroke-linecap:round}
+.ac{stroke:#2563C9;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;fill:none}
+.af{fill:#2563C9}.ap{fill:#DCE8FB}.wf{fill:#E2570F}.wp{fill:#FDE3D4}.gf{fill:#0F9D58}.gp{fill:#DCF1E7}
+.tx{fill:#C6D2E2}
+</style></defs><circle cx="160" cy="110" r="62" fill="none" stroke="#DCE8FB" stroke-width="16"/><path d="M160 48a62 62 0 0152 95" class="ac" stroke-width="5"/><path d="M206 136l6 12 13-4" class="ac" stroke-width="4"/><circle cx="160.04937225606545" cy="48.00001965822626" r="7" class="af"/><circle cx="222.0" cy="110.0" r="7" class="af"/><circle cx="160.04937225606545" cy="171.99998034177375" r="7" class="af"/><circle cx="98.00007863289255" cy="110.09874448082218" r="7" class="af"/><rect x="132" y="100" width="56" height="8" rx="2" class="tx"/><rect x="132" y="116" width="36" height="8" rx="2" class="ap"/></svg></div></div>
 </div></section>
 
 <section class="alt-section"><div class="section-inner"><div class="section-header"><div class="section-tag">Teknoloji Yığını</div><h2>Modern & Kanıtlanmış Teknolojiler</h2><p>Projenizin gereksinimlerine en uygun teknoloji stack'ini birlikte belirliyoruz.</p></div>
@@ -517,9 +537,9 @@ select{appearance:none;background-image:url("data:image/svg+xml;charset=utf-8,%3
     <div class="footer-col"><h5>Ürünler</h5><a href="onegate-wms.html">OneGate WMS</a>
       <a href="onegate-procurement.html">OneGate Procurement</a>
       <a href="4flow.html">4Flow</a>
-      <a href="4cast.html">4Cast</a><a href="trassir.html">Trassir</a></div>
+      <a href="4cast.html">4Cast</a><a href="trassir.html">Trassir</a><a href="veri-guvenligi.html">Veri Güvenliği</a></div>
   </div>
-  <div class="footer-bottom"><span>&copy; 2022 4Simple Bilişim. Tüm hakları saklıdır.</span>info@4simple.com.tr</div>
+  <div class="footer-bottom"><span>&copy; 2022&ndash;2026 4Simple Bilişim. Tüm hakları saklıdır.</span><span class="f-yasal"><a href="kvkk-aydinlatma.html">KVKK Aydınlatma Metni</a><span aria-hidden="true">·</span><a href="cerez-politikasi.html">Çerez Politikası</a><span aria-hidden="true">·</span><a href="#" data-kvkk-tercih>Çerez Tercihleri</a></span><span><a href="mailto:info@4simple.com.tr">info@4simple.com.tr</a></span></div>
 </footer>
 
 
@@ -541,5 +561,6 @@ select{appearance:none;background-image:url("data:image/svg+xml;charset=utf-8,%3
   });
 })();
 </script>
+<script src="kvkk/cerez.js" defer></script>
 </body>
 </html>
